@@ -1,0 +1,125 @@
+/**
+ * File: style.css
+ * Stylesheet made for index.html
+ *
+ */
+
+/* Specificity: 0001 */
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+/* Link Decoration */
+a {
+	text-decoration: none;
+}
+
+h3 {
+	display: inline-flex;
+}
+
+main {
+	margin: auto;
+}
+
+input {
+	height: 35px;
+	width: 350px;
+	background-color: #fff;
+	color: #000;
+	font-weight: 600;
+	border: solid 1px #aaa;
+	border-radius: 4px;
+	font-size: 20px;
+	text-align: center;
+}
+
+button {
+	font-size: 18px;
+	font-weight: bold;
+	border: 0;
+	height: 40px;
+	width: 100px;
+	border-radius: 8px;
+	text-align: center;
+	background-color: #eee;
+	box-shadow: 0 0 4px #aaa;
+}
+
+
+button:hover,
+button:visited {
+	color: #fff;
+	height: 42px;
+	width: 105px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+footer a {
+	color: #455A64;
+	margin-left: 30px;
+}
+
+/* Specificity 0010 */
+/* Navigation Bar */
+.navbar {
+	padding: 5px;
+	color: #fff;
+	background-color: #455A64;
+	height: 35px;
+}
+
+.navlist {
+	color: #fff;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+.navitem {
+	color: #fff;
+	font-size: 35px;
+}
+
+.main {
+	margin: auto;
+	padding-top: 250px;
+	float: center;
+}
+
+.info {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.username {
+	padding: 10px;
+}
+
+
+/* Specificity 0100 */
+
+#main-username-input {
+
+}
+
+#main-username-input:active,
+#main-username-input:focus {
+	placeholder: none;
+}
+
