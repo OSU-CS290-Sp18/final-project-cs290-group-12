@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+
+	<!---------------------------------->
+	<!---------------HEAD--------------->    <!--- AUTHOR: TEAM -->
+	<!---------------------------------->
+	<head>
+		<meta charset="UTF-8">
+		<title>Picture.me - Connect through creativity.</title>
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+		<script src="/index.js" charset="utf-8" defer></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+
+		<!-- This script incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+		<script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+		<link rel="shortcut icon" href="/images/logo.png" />
+
+
+	</head>
+
+
+
+	<body>
+	<!---------------------------------->
+	<!---------------HEADER------------->    <!--- AUTHOR: Darius -->
+	<!---------------------------------->
+		<header>
+			<nav class="navbar">
+				<center>
+					<a href='/'><img src="/images/logo_white.png" style="vertical-align:middle" id="logo_white" height="40px" width="40px"></a>
+					<a href='/' class="navitem">p i c t u r e . m e</a>
+				</center>
+			</nav>
+		</header>
+
+
+		<main id="container">
+	<!---------------------------------->
+	<!---------------MAIN--------------->    <!--- AUTHOR: TEAM -->
+	<!---------------------------------->
+			<div class="home_screen">
+				<center>
+					<div class="info">
+						<p>
+							Picture.me is a way to connect through your creative drawing.
+							Connect with someone and draw to appeal.
+						</p>
+					</div>
+					<div class ="username_error hidden"> Please enter a username. </div>
+
+
+
+					<div class="username">
+						<input type="text" name="username_text" id="main-username-input" placeholder="Enter a username..." onfocus="this.placeholder=''" maxlength="10" onblur="this.placeholder='Enter a username...'">
+						</div>
+						<button type="submit" class="button_connect" disabled="true" style="vertical-align:middle"><span>Connect </span></button>
+				</center>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!---------------------------------->
+	<!---------------LOADING------------>    <!--- AUTHOR: Aaron -->
+	<!---------------------------------->
+			<div class="loading_screen">
+				<center>
+					<div class="loader"></div>
+					<div class="loader_text1">Looking for match . . .</div>
+					<div class="loader_text2">Waiting for match's response . . .</div>
+					<div class="loader_text3">Match declined: Restarting . . .</div>
+				</center>
+			</div>
+
+
+	<!---------------------------------->
+	<!-------------DRAWPIC1------------->    <!--- AUTHOR: Darius -->
+	<!---------------------------------->
+			<div class="draw_pic1">
+				<center>
+					<div class="draw_pic_text">Draw a picture!</div>
+					<div id="canvasDiv">
+						<canvas class="canvas1 canvas-css" width="500px" height="500px" style="border:3px solid #455A64;"></canvas>
+						<div id="slider-vertical1" class="topcoat-range-input1 slider-css" style="height: 200px;"></div>
+					</div>
+					<div id="countdown">
+						<div id="countdown-number1">10</div>
+							<svg class="first_timer">
+								<circle r="36" cx="40" cy="40"></circle>
+							</svg>
+					</div>
+				</center>
+			</div>
+
+
+
+	<!---------------------------------->
+	<!-------------DRAWPIC2------------->    <!--- AUTHOR: Darius -->
+	<!---------------------------------->
+			<div class="draw_pic2">
+				<center>
+					<div class="draw_pic_text">Draw another picture!</div>
+					<div id="canvasDiv">
+						<canvas class="canvas2 canvas-css" width="500px" height="500px" style="border:3px solid #455A64;"></canvas>
+						<div id="slider-vertical2" class="topcoat-range-input2 slider-css" style="height: 200px;"></div>
+					</div>
+					<div id="countdown">
+						<div id="countdown-number2">10</div>
+							<svg class="second_timer">
+								<circle r="36" cx="40" cy="40"></circle>
+							</svg>
+					</div>
+				</center>
+			</div>
+
+	<!---------------------------------->
+	<!-------------TIME'S_UP------------>    <!--- AUTHOR: Darius -->
+	<!---------------------------------->
+			<div class="times_up">
+				<center>
+						<h1>Time's up!</h1>
+				</center>
+			</div>
+
+
+	<!---------------------------------->
+	<!-----------MATCH_FOUND------------>    <!--- AUTHOR: Darius -->
+	<!---------------------------------->
+			<div class= "match_found">
+				<center>
+					<div class="draw_pic_text match_text">You have a match!</div>
+						<div class="share_pic_btn"><img class="pic1" src="#" width="500px" height="500px"></div>
+						<div class="description_text">Would you like to continue?</div>
+					<div class="yes_no_box">
+							<button class="button_answer matchfound_yes">Yes</button>
+							<button class="button_answer matchfound_no">No</button>
+					</div>
+				</center>
+			</div>
+
+
+	<!---------------------------------->
+	<!-----------ASKCHATMODAL----------->    <!--- AUTHOR: Aaron -->
+	<!---------------------------------->
+			<div class="askchatmodal">
+				<center>
+				<div class="draw_pic_text ask_chat_text1">Their second creation!</div>
+					<div class="share_pic_btn"><img class="pic2" src="#" width="500px" height="500px"></div>
+					<div class="description_text ask_chat_text2">Would you like to chat with this person?</div>
+					<div class="yes_no_box">
+							<button class="button_answer askchatmodal_yes">Yes</button>
+							<button class="button_answer askchatmodal_no">No</button>
+					</div>
+				</center>
+			</div>
+
+
+		<!---------------------------------->
+		<!--------------CHATMODAL----------->    <!--- AUTHOR: Diego -->
+		<!---------------------------------->
+			<div class="chatbox">
+				<center> <h2>Chat page placeholder.</h2>
+				<!--
+
+				<script type="text/javascript" src="/../socket.io/socket.io.js"></script>
+					<script>
+						var socket = io.connect('http://localhost:8080');
+						var username = prompt('Enter a username:');
+
+						// Send the username with the signal 'new_username' (can be anything)
+						socket.emit('new_username', username);
+
+						socket.on('message', function(message) {
+							alert('The server has a message from: ' + message);
+						});
+					</script>
+
+				-->
+				</center>
+			</div>
+		</main>
+
+
+
+
+
+	<!---------------------------------->
+	<!--------------FOOTER-------------->    <!--- AUTHOR: Darius -->
+	<!---------------------------------->
+		<div class="footer">
+			<center>
+			<a class="footer_item" target="_blank" href="/terms">
+				Terms
+			</a>
+			<a class="footer_item" target="_blank" href="/about">
+				About
+			</a>
+			<a class="footer_item" target="_blank" href="/stats">
+				Stats
+			</a>
+			<a class="footer_item" target="_blank" href="/contact">
+				Contact
+			</a>
+			</center>
+		</div>
+
+
+	</body>
+</html>
