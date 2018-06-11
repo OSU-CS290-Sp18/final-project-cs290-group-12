@@ -1,2 +1,2 @@
 # PicMe
-## CS 290 Final Project
+## LIVE VERSION: http://pictureme.us.openode.io/
