@@ -61,14 +61,14 @@ var uniqueKey = function () {
 			TIMER FUNCTIONS
 								AUTHOR: Darius			*/
 function startTimer1() {
-	timer_count1.textContent = 10;
+	timer_count1.textContent = 30;
 	function updateText(input) {
 		var current_count = timer_count1.textContent;
 		timer_count1.textContent = current_count - 1;
 	}
 
 	setInterval(updateText, 1000);
-	setTimeout(endTimer1, 10000);
+	setTimeout(endTimer1, 30000);
 }
 
 function endTimer1() {
@@ -91,14 +91,14 @@ function endTimer1() {
 }
 
 function startTimer2() {
-	timer_count2.textContent = 10;
+	timer_count2.textContent = 30;
 	function updateText(input) {
 		var current_count = timer_count2.textContent;
 		timer_count2.textContent = current_count - 1;
 	}
 
 	setInterval(updateText, 1000);
-	setTimeout(endTimer2, 10000);
+	setTimeout(endTimer2, 30000);
 }
 
 function endTimer2() {
